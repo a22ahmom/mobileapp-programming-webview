@@ -15,10 +15,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void showExternalWebPage(){
         // TODO: Add your code for showing external web page here
+
     }
 
     public void showInternalWebPage(){
         // TODO: Add your code for showing internal web page here
+
     }
 
     @Override
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         myWebView = findViewById(R.id.my_webview);
         myWebView.setWebViewClient(new WebViewClient());
+        myWebView.loadUrl("https://google.com");
         myWebView.getSettings().setJavaScriptEnabled(true);
 
         /*
